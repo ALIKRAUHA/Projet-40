@@ -1,0 +1,135 @@
+
+/*Reste:
+- a gérer les tableaux pour qu'ils soient plus beaux 
+-afficher les images avec une taille max */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #e1cc3d;
+
+}
+img{
+  height: 200px;
+  width:200px;
+}
+
+
+#header {
+  background-image: url("images/bannière.jpg");
+  color: black;
+  padding: 15px;
+  text-align:center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#footer {
+  display:block;
+  margin-top: auto;
+  color: black;
+  padding: 15px;
+  background-color: #88dd00;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.element{
+  width: 50%;
+  color: black;
+  text-align: justify;
+  text-decoration: none;
+  padding: 5px;
+
+}
+.groupes {
+  border: solid black 2px;
+}
+.albums {
+  border: solid black 2px;
+}
+.groupes, .albums{
+  text-align: center;
+}
+h1{
+  color : #ff7802;
+  font-size: 30px;
+  font-weight: bold;
+}
+h2{
+  text-decoration:underline;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#conteneurSections{
+  margin: auto;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+#corps {
+  margin: auto;
+}
+.groupes:hover{
+  color : blue;
+  opacity: 0.7;
+  border: solid blue 2px;
+}
+.albums:hover {
+  color : blue;
+  opacity: 0.7;
+  border: solid blue 2px;
+}
+.copyright {
+  font-weight: bold;
+}
+strong {
+  font-weight:bold;
+  text-decoration: underline;
+}
+table{
+  border-collapse: collapse;
+}
+td, th  {
+  border: 1px solid black;
+  font-size:15px;
+}
+caption{
+  font-size: 20px;
+  font-weight:bold;
+}
+@media all and (max-width: 600px){
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items :center;
+  }
+  #conteneurSections{
+    flex-direction: column;
+    justify-content: center;
+    align-items :center;
+  }
+  .element{
+    width : 100%;
+  }
+  img{
+  height: 50px;
+  width:50px;
+}
+  th{
+    width:30px;
+}
+}

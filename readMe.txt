@@ -1,0 +1,1 @@
+page et pageAlbums sont obsolètes, pour ouvrir : pageGroupes
